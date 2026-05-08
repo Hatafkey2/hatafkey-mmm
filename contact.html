@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact us</title>
+</head>
+<body>
+<div id="contactus">
+    <h1>Contact us</h1>
+    <form action="#">
+        <label for="query">Type of query</label>
+        <select name="myquery" id="query">
+            <option value="sel" selected>Select</option>
+            <option value="ord">Order related issue</option>
+            <option value="site">Site related issue</option>
+            <option value="fed">Complaint related issue</option>
+            <option value="other">Others</option>
+        </select>
+
+        <div class="form-shape">
+            <label for="name">Name</label>
+            <input type="text" name="myname" id="name" placeholder="Enter your name">
+        </div>
+
+        <div class="form-shape">
+            <label for="email">Email-ID</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+        </div>
+
+        <div class="form-shape">
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="myphone" id="phone" placeholder="Enter your number">
+        </div>
+
+        <div id="radio">
+            Are you a member of online food shop:
+            <label><input type="radio" name="eligible" value="yes"> Yes</label>
+            <label><input type="radio" name="eligible" value="no"> No</label>
+        </div>
+
+        <div class="form-shape">
+            <label for="message">Elaborate your query</label>
+            <textarea name="msg" id="message" cols="30" rows="10"></textarea>
+        </div>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</div>
+</body>
+</html>
